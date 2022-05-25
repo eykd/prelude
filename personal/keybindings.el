@@ -23,3 +23,8 @@
                 (lambda ()
                   (interactive)
                   (call-interactively (key-binding "\C-x\C-c"))))
+
+(global-set-key "\M-n"  (lambda () (interactive) (scroll-up   1)) )
+(global-set-key "\M-p"  (lambda () (interactive) (scroll-down 1)) )
+(global-set-key "\M-\S-n"  (lambda () (interactive) (scroll-up   5)) )
+(global-set-key "\M-\S-p"  (lambda () (interactive) (scroll-down 5)) )

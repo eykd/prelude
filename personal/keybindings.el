@@ -10,6 +10,8 @@
 (global-set-key (kbd "s-+") 'text-scale-increase)
 (global-set-key (kbd "s--") 'text-scale-decrease)
 
+(global-set-key (kbd "s-;") 'comment-dwim)
+
 
 (global-set-key (kbd "s-w") 'delete-frame)
 (global-set-key (kbd "s-n") 'make-frame)

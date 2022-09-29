@@ -1,4 +1,6 @@
-(use-package py-isort
+(use-package python-isort
              :demand t
              :after python
-             :hook (before-save-hook . py-isort-before-save))
+             :hook (before-save-hook . python-isort-on-save-mode))
+(require 'python-isort)
+(add-hook 'python-mode-hook 'python-isort-on-save-mode)

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # -*- mode: snippet; require-final-newline: nil -*-
-=======
-# -*- mode: snippet -*-
->>>>>>> 9abe4b4 (Add isort; pdb snippet)
 # name: pdb
 # key: pdb
 # --

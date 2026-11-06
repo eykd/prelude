@@ -60,3 +60,8 @@
 
 (global-set-key "\M-N" 'scroll-up)
 (global-set-key "\M-P" 'scroll-down)
+
+;; markdown-mode binds M-n/M-p to link navigation; fall through to the globals.
+(with-eval-after-load 'markdown-mode
+  (define-key markdown-mode-map (kbd "M-n") nil)
+  (define-key markdown-mode-map (kbd "M-p") nil))
